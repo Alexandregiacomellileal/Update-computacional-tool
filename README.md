@@ -14,14 +14,14 @@ File descriptions:
 
 7) circuito_4_artigo_atp_cgm.pdf => equivalent circuit's figure of clamp-on ground meter measurement method in the case study wind farm;
 
-8) dataframe_sbn_mutua_varia_rf_e_rp.xlsx => excel spreadsheet 
+8) dataframe_sbn_mutua_varia_rf_e_rp.xlsx => Excel spreadsheet containing 11000 input vector samples for simulation of clamp-on ground meter method in case study's grounding; 
 
-9) resultados_obtidos_4_artigo.xlsx => excel spreadsheet 
+9) resultados_obtidos_4_artigo.xlsx => Excel spreadsheet containing the final results;
 
-10) sbn_error_boxplot_high_frequency_cap.py => algorithm in python
+10) sbn_error_boxplot_high_frequency_cap.py => algorithm in Python to automate data insertion and removal in ATP software (High frequency measurement circuit simulation);
 
-11) sbn_varia_Rf_e_Rp_e_k_com_mutua_all_cap_111143.py => algorithm in python
+11) sbn_varia_Rf_e_Rp_e_k_com_mutua_all_cap_111143.py => algorithm in Python to automate data insertion and removal in ATP software (Clamp-on ground meter measurement circuit simulation);
 
-12) sbn_varios_algoritmos_error_boxplot_mutua_variando_rf_e_rp.py => 
+12) sbn_varios_algoritmos_error_boxplot_mutua_variando_rf_e_rp.py => Python algorithm containing machine learning techniques to predict turbine grounding resistance from clamp-on meter readings
 
 13) sbnallmutuacap.acp => ATP file for computer simulation of the clamp-on ground meter method in case study's grounding;
