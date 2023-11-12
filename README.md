@@ -14,7 +14,7 @@ File descriptions:
 
 7) circuito_4_artigo_atp_cgm.pdf => equivalent circuit's figure of clamp-on ground meter measurement method in the case study wind farm;
 
-8) dataframe_sbn_mutua_varia_rf_e_rp.xlsx => Excel spreadsheet containing 11000 input vector samples for simulation of clamp-on ground meter method in case study's grounding; 
+8) dataframe_sbn_mutua_varia_rf_e_rp.xlsx => Excel spreadsheet containing 11000 samples of input and output vectors resulting from the simulation of the clamp-on ground meter method in the case study's grounding;
 
 9) resultados_obtidos_4_artigo.xlsx => Excel spreadsheet containing the final results;
 
