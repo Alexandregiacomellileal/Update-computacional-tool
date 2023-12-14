@@ -4,6 +4,52 @@ Ensuring the safety of personnel and equipment in wind farms requires continuous
 
 The proposed solution, depicted in Fig1.pdf , involves a systematic sequence of tasks. Initially, the process begins by accessing the technical documentation of the wind farm's grounding system. Following this, a comprehensive survey of the parameters necessary for calculating the components of the equivalent electrical circuit is conducted. Next, an appropriate electrical circuit model is chosen for the wind farm's grounding system. To account for variations and uncertainties, a sensitivity study is performed on parameters influencing the grounding resistance and capacitance of turbines and horizontal electrodes. Tolerance ranges are defined, considering factors such as construction non-conformities or soil and electrode deterioration. A sample vector $\textbf{P}$ is generated, with each element representing a specific grounding resistance or capacitance of a turbine or horizontal electrode. An element representing the parameter $k$ is also included to replicate the mutual coupling effect between the turbine and horizontal electrodes during clamp-on ground meter measurements. Uniform distributions are used to generate vector elements within their corresponding tolerance ranges set by the sensitivity study. The equivalent circuit of the grounding system is then loaded based on the values from the sample vector $\textbf{P}$. Subsequently, a computational simulation of the clamp-on method is performed in the equivalent electrical circuit. Instrument reading values are obtained in each turbine, resulting in an output sample vector Zmed. This process is repeated $m$ times to generate input-output pairs stored in a database $D_{m\times2n}$. The database is then utilized to train a machine-learning model. The trained model undergoes validation and testing to ensure accuracy and reliability. Finally, the trained model is used to predict the values of the resistances $R_{fest}$ for the $n$ turbines based on the readings obtained via the clamp-on method during wind farm periodic inspections $Z_{med}$ This systematic approach ensures a logical progression from data collection and circuit modeling to machine learning application, facilitating accurate predictions of turbine grounding resistances. The details of each stage of the process are presented as follows.
 
+# Wind Farm Grounding System Analysis
+
+## Overview
+
+This repository contains a systematic solution for analyzing the grounding system of a wind farm. The proposed solution involves a sequence of tasks depicted in Figure~\ref{fig:methodflow}. The approach integrates technical documentation analysis, parameter survey, electrical circuit modeling, sensitivity studies, and machine learning to predict turbine grounding resistances.
+
+## Methodology
+
+The process follows these key stages:
+
+1. **Access Technical Documentation:**
+   - Start by accessing the technical documentation of the wind farm's grounding system.
+
+2. **Parameter Survey:**
+   - Conduct a comprehensive survey of parameters necessary for calculating components of the equivalent electrical circuit.
+
+3. **Circuit Modeling:**
+   - Choose an appropriate electrical circuit model for the wind farm's grounding system.
+
+4. **Sensitivity Study:**
+   - Perform a sensitivity study on parameters influencing grounding resistance and capacitance, considering variations and uncertainties.
+
+5. **Sample Vector Generation:**
+   - Generate a sample vector $\textbf{P}$ with elements representing specific grounding resistances or capacitances, including a parameter $k$ for mutual coupling effects.
+
+6. **Equivalent Circuit Loading:**
+   - Load the equivalent circuit based on values from the sample vector $\textbf{P}$.
+
+7. **Computational Simulation:**
+   - Perform a computational simulation of the clamp-on method in the equivalent electrical circuit.
+
+8. **Database Generation:**
+   - Repeat the process to generate input-output pairs stored in a database $\mathbb{D}_{m\times2n}$.
+
+9. **Machine Learning:**
+   - Utilize the database to train a machine-learning model, followed by validation and testing.
+
+10. **Prediction:**
+    - Use the trained model to predict the resistances $\textbf{R}_{fest}$ for the $n$ turbines based on clamp-on method readings during wind farm periodic inspections $\textbf{Z}_{med}$.
+
+## Usage
+
+To apply this systematic approach to your wind farm grounding system analysis, follow the steps outlined in the respective sections of the codebase.
+
+
+
 
 The files contained in this folder are:
 
