@@ -1,9 +1,6 @@
-This is the file folder for the article titled "Integrated approach for wind turbine grounding resistance estimation: Bridging clamp-on ground meter, computational simulations, and machine learning".
-
-# Wind Farm Grounding System Analysis
+# Integrated approach for wind turbine grounding resistance estimation: Bridging clamp-on ground meter, computational simulations, and machine learning.
 
 ## Overview
-This repository contains files and algorithms for the analysis of the grounding system in a wind farm. The proposed solution involves a systematic sequence of tasks, including technical documentation analysis, parameter survey, electrical circuit modeling, sensitivity studies, and machine learning for predicting turbine grounding resistances.
 This repository contains a systematic solution for analyzing the grounding system of a wind turbines. The proposed solution involves a sequence of tasks depicted in Fig1.pdf. The approach integrates technical documentation analysis, parameter survey, electrical circuit modeling, sensitivity studies, and machine learning to predict turbine grounding resistances.
 
 ## Methodology
@@ -38,7 +35,7 @@ The process follows these key stages:
    - Utilize the database to train a machine-learning model, followed by validation and testing.
 
 10. **Prediction:**
-    - Use the trained model to predict the resistances $\textbf{R}_{fest}$ for the $n$ turbines based on clamp-on method readings during wind farm periodic inspections $\textbf{Z}_{med}$.
+    - Use the trained model to predict the resistances $\textbf{R}_{fest}$ for the $n$ turbines based on clamp-on method readings during wind farm periodic inspections **{Z}_{med}**.
 
 ________________________________________________________________________________________________________________________
 
