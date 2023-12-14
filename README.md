@@ -35,7 +35,7 @@ The process follows these key stages:
    - Utilize the database to train a machine-learning model, followed by validation and testing.
 
 10. **Prediction:**
-    - Use the trained model to predict the resistances $\textbf{R}$ for the $n$ turbines based on clamp-on method readings during wind farm periodic inspections **{Z}_{med}**.
+    - Use the trained model to predict the resistances $\textbf{R}_f$ for the $n$ turbines based on clamp-on method readings during wind farm periodic inspections **$Z_{med}$**.
 
 ________________________________________________________________________________________________________________________
 
