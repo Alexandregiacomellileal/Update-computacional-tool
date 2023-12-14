@@ -12,7 +12,7 @@ ________________________________________________________________________________
 ## Files
 
 1. **3300_clamp_on_direct_test_input_parameters.xlsx:**
-   - Excel spreadsheet with 3300 input vector samples for simulating the clamp-on ground meter method in case study's grounding system - test set $\mathbb{Y}_{3300\times30}$
+   - Excel spreadsheet with 3300 input vector samples (test set $\mathbb{Y}_{3300\times30}$) for simulating the clamp-on ground meter method in case study's grounding system.
 
 2. **3300_high_frequency_test_input_parameters.xlsx:**
    - Excel spreadsheet with 3300 input vector samples for simulating the high-frequency method in case study's grounding system.
