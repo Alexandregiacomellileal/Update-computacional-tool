@@ -29,7 +29,7 @@ The process follows these key stages:
    - Perform a computational simulation of the clamp-on method in the equivalent electrical circuit.
 
 8. **Database Generation:**
-   - Repeat the process to generate input-output pairs stored in a database $\mathbb{**D**}_{m\times2n}$.
+   - Repeat the process to generate input-output pairs stored in a database $\mathbb{D}_{m\times2n}$.
 
 9. **Machine Learning:**
    - Utilize the database to train a machine-learning model, followed by validation and testing.
