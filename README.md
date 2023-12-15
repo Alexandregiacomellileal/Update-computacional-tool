@@ -19,8 +19,10 @@ ________________________________________________________________________________
    
 3. **Database.xlsx:**
     - Excel spreadsheet featuring an extensive dataset designed for training, validation, and testing machine learning models. The dataset comprises 11,000 vectors, with specific emphasis on:
+      
 Training Data: The training dataset, denoted as $\mathbb{D}_{7700\times60}$, is structured with 7,700 samples and 60 features for effective model training.
-Testing Data: The testing dataset, represented as $\mathbb{YX}_{3300\times60}$, consists of 3,300 samples with 60 features. This set is utilized to evaluate and validate the performance of machine learning models.
+
+Testing Data: The testing dataset, represented as $\mathbb{Y}_{3300\times60}$, consists of 3,300 samples with 60 features. This set is utilized to evaluate and validate the performance of machine learning models.
 
 4. **HFM.acp:**
    - ATP file for computer simulation of the high-frequency method in case study's grounding system.
