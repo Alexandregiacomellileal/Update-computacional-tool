@@ -15,7 +15,7 @@ ________________________________________________________________________________
     - Flowchart of the proposed methodology.
 
 2. **Proposed_solution.py:**
-    - Python algorithm containing machine learning techniques to predict turbine grounding resistance from clamp-on meter readings. Python algorithm to automate data insertion and removal in ATP software for high-frequency measurement circuit simulation. Python algorithm to automate data insertion and removal in ATP software for clamp-on ground meter measurement circuit simulation.
+    - Python algorithm to automate data insertion and removal in ATP software specifically adapted for simulations of clamp-on and high-frequency ground meter measurement circuits. It also incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings, utilizing data preprocessing, model training, and evaluation metrics to optimize predictive accuracy. 
    
 3. **Database.xlsx:**
     - Excel spreadsheet with 11000 samples of input and output vectors (For demonstration proposes).
