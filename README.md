@@ -18,7 +18,7 @@ ________________________________________________________________________________
     - Python algorithm to automate data insertion and removal in ATP software specifically adapted for simulations of clamp-on and high-frequency ground meter measurement circuits. It also incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings, utilizing data preprocessing, model training, and evaluation metrics to optimize predictive accuracy. Towards the conclusion, a boxplot error graph is generated, depicting the outcomes derived from the implementation of Clamp-on Ground Meter Method (CGM), High-Frequency Method (HFM), and the Proposed Method in the São Bento Complex (SBC) grounding system for comparative analysis of their effects.
    
 3. **Database.xlsx:**
-    - Excel spreadsheet featuring an extensive dataset designed for training, validation, and testing machine learning models. The dataset comprises 11,000 vectors.
+    - Excel spreadsheet featuring an extensive dataset designed for training, validation, and testing machine learning models. The dataset comprises 11,000 vectors. In the machine learning pipeline, 70% of these vectors are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% of vectors are dedicated to testing the trained model, as well as assessing the performance of the CGM and HFM measurement methods within the SBC framework. This division allows for a comprehensive evaluation of both the model's predictive capabilities and the effectiveness of measurement techniques in the specified context.
 
 4. **HFM.acp:**
    - ATP file for computer simulation of the high-frequency method in case study's grounding system.
