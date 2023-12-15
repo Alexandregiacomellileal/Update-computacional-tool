@@ -19,7 +19,7 @@ ________________________________________________________________________________
    
 3. **Database.xlsx:**
     - Excel spreadsheet with 11,000 vectors to train, validate, and test machine learning models. 
-This spreadsheet includes datasets $\mathbb{D}_{7700\times60}$, $\mathbb{Y}_{3300\times60}$, and $\mathbb{X}_{3300\times60}$.
+This spreadsheet includes datasets $\mathbb{D}_{7700\times60}$ used for training of the machine learning model,and the $\mathbb{Y}_{3300\times60}$ and $\mathbb{X}_{3300\times60}$ used by testing.
 4. **HFM.acp:**
    - ATP file for computer simulation of the high-frequency method in case study's grounding system.
 
