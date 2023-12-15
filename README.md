@@ -1,8 +1,4 @@
-![fluxograma_artigo_4](https://github.com/Alexandregiacomellileal/Update-computacional-tool/assets/96079504/97f12202-1bee-4dbc-9934-4da7867ca0bb)
-
-
-
-
+<img width="1666" alt="image" src="https://github.com/Alexandregiacomellileal/Update-computacional-tool/assets/96079504/d40874aa-487c-4722-abfe-1cff32cfbd77">
 
 
 # Integrated approach for wind turbine grounding resistance estimation: Bridging clamp-on ground meter, computational simulations, and machine learning.
