@@ -18,7 +18,7 @@ ________________________________________________________________________________
     - Python algorithm to automate data insertion and removal in ATP software specifically adapted for simulations of clamp-on and high-frequency ground meter measurement circuits. It also incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings, utilizing data preprocessing, model training, and evaluation metrics to optimize predictive accuracy. 
    
 3. **Database.xlsx:**
-    - Excel spreadsheet with 11000 samples of input and output vectors (For demonstration proposes).
+    - Excel spreadsheet with 11,000 vectors to train, validate, and test machine learning models.
    
 4. **HFM.acp:**
    - ATP file for computer simulation of the high-frequency method in case study's grounding system.
