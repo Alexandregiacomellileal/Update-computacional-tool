@@ -39,8 +39,10 @@ ________________________________________________________________________________
    - PDF file with the equivalent circuit's figure for the clamp-on ground meter measurement method in case study's grounding system.
 
 8. **MAPE_results.xlsx:**
-   - Excel spreadsheet containing the final results. 
-
+   - Excel spreadsheet containing the final results.
+  
+9. **Supporting files:**
+   - This directory encompasses the algorithms and Excel files utilized by the authors during the development of the proposed solution. 
 
 ________________________________________________________________________________________________________________________
 
