@@ -42,7 +42,7 @@ ________________________________________________________________________________
    - Excel spreadsheet containing the final results.
   
 9. **Supporting files:**
-   - This directory encompasses the algorithms and Excel files utilized by the authors during the development of the proposed solution. 
+   - This directory encompasses the sub-algorithms and Excel files utilized by the authors during the development of the proposed solution. Each module (sub-algorithms) performs a specific task, and when combined, the modules form the complete algorithm named Proposed_solution.py.
 
 ________________________________________________________________________________________________________________________
 
