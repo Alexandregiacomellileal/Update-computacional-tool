@@ -5,9 +5,9 @@ Created on Fri Dec 15 07:12:45 2023
 @author: Alexandre Giacomelli Leal
 
 """
+#######################################################################################################################
 
-
-#%% Section 1 - Algorithm to automate data insertion and removal in ATP software specifically adapted for simulations of clamp-on ground meter measurement circuits.
+#%% Module 1 - Algorithm to automate data insertion and removal in ATP software specifically adapted for simulations of clamp-on ground meter measurement circuits.
 
 
 # This analysis refers to a set of 30 wind turbines located at the São Bento do Norte Wind Complex.
@@ -534,11 +534,11 @@ R_df_new_fixed.to_excel('C:/Users/alexa/OneDrive/Área de Trabalho/R_df_new_fixe
 
 
 
+#######################################################################################################################
 
 
 
-
-#%% Section 2 - Algorithm that incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings, utilizing data preprocessing, model training, and evaluation metrics to optimize predictive accuracy
+#%% Module 2 - Algorithm that incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings, utilizing data preprocessing, model training, and evaluation metrics to optimize predictive accuracy
 #Additionally, it generates a CGM and a Proposed Solution boxplot error graph in the SBC.
 
 # This analysis refers to a set of 30 wind turbines located at the São Bento do Norte Wind Complex.
@@ -725,10 +725,10 @@ plt.show()
 plt.close()
 
 
+#######################################################################################################################
 
 
-
-#%% Section 3 - Algorithm to automate data insertion and removal in ATP software specifically adapted for simulations of high-frequency ground meter measurement circuits.
+#%% Module 3 - Algorithm to automate data insertion and removal in ATP software specifically adapted for simulations of high-frequency ground meter measurement circuits.
 #Additionally, it generates an HFM boxplot error graph in the SBC.
 
 import numpy as np
