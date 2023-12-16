@@ -18,6 +18,67 @@ ________________________________________________________________________________
     - Flowchart of the proposed methodology.
 
 2. **Proposed_solution.py:**
+
+# Project Title
+
+## Overview
+
+Briefly describe the purpose and scope of your project. Include high-level goals and objectives.
+
+## Modules
+
+### Module 1: Automated Simulation and Data Collection
+
+- **Objective**: Generate and control simulations of electrical circuits using ATP for clamp-on ground meter measurement circuits.
+- **Tasks**:
+  1. Automatically generate .atp simulation files for clamp-on ground meter measurement circuits.
+  2. Automate data insertion and removal in ATP for simulations.
+  3. Convert resulting waveforms (.pl4 files) into MATLAB files (.mat).
+  4. Store vector pairs (**Z**<sub>med</sub> - **R**<sub>f</sub>) in a dedicated database.
+
+### Module 2: Machine Learning for Prediction
+
+- **Objective**: Predict turbine grounding resistance based on clamp-on meter readings using machine learning.
+- **Tasks**:
+  1. Utilize the database created in Module 1 for data preprocessing.
+  2. Allocate 70% of vector pairs for training the machine learning model.
+  3. Use the remaining 30% for testing and evaluating the trained model.
+  4. Optimize predictive accuracy and assess model performance.
+  5. Construct boxplot error graphs comparing Clamp-on Ground Meter Method (CGM) and Proposed Method in the São Bento Complex (SBC) grounding system.
+
+### Module 3: High-Frequency Ground Meter Simulation
+
+- **Objective**: Generate and control simulations of high-frequency ground meter measurement circuits using ATP.
+- **Tasks**:
+  1. Adapt ATP for simulations of high-frequency ground meter measurement circuits.
+  2. Load input parameters from the testing set separated in Module 2.
+  3. Convert resulting waveforms (.pl4 files) into MATLAB files (.mat).
+  4. Store input-output pairs in a dedicated database.
+  5. Construct a boxplot error graph depicting outcomes from the implementation of the High-Frequency Method (HFM) in the São Bento Complex (SBC) grounding system.
+
+## Usage
+
+Provide instructions on how to use each module and any dependencies required. Include examples if applicable.
+
+## Results
+
+Include any key results, findings, or visualizations from your simulations and machine learning predictions.
+
+## Contributing
+
+If you would like to contribute to this project, please follow the guidelines in [CONTRIBUTING.md](link-to-CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [License Name] - see the [LICENSE.md](link-to-LICENSE.md) file for details.
+
+## Acknowledgments
+
+Mention any contributors, libraries, or resources you found helpful during the development of this project.
+
+
+
+
     - Module 1: A Python algorithm that automatically generates and controls massive simulations of electrical circuits using ATP (Alternative Transient Program). It automates data insertion and removal in ATP, specifically adapted for simulations of clamp-on ground meter measurement circuits. The module creates .atp simulation files, performs simulations, and converts resulting waveforms (.pl4 files) into MATLAB files (.mat). All vetors pairs (**Z**<sub>med </sub> - **R**<sub>f</sub> ) are stored in a dedicated database, serving as the foundational repository for training, validating, and testing the machine-learning model to be created in Module 2.
 
     - Module 2: A Python algorithm that incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings. It utilizes the database created in Module 1 for data preprocessing, model training, and evaluation metrics to optimize predictive accuracy. In the machine learning pipeline, 70% of the vectors pairs (**Z**<sub>med </sub> - **R**<sub>f</sub> ) from the database are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% is dedicated to testing the trained model and assessing the performance of the CGM through the construction of boxplot error graphs. This graphs depicts the outcomes derived from the implementation of the Clamp-on Ground Meter Method (CGM) and the Proposed Method in the São Bento Complex (SBC) grounding system for a comparative analysis of their effects.
@@ -27,25 +88,25 @@ ________________________________________________________________________________
 
     - To utilize this algorithm, users are required to download and install three essential software components: ATP, the pl42mat.exe converter, and Python. 
    
-4. **Database.xlsx:**
+3. **Database.xlsx:**
     - Excel spreadsheet featuring an extensive dataset designed for training, validation, and testing machine learning models. The dataset consists of 11,000 solution vectors, formed by concatenating the **P** vectors with their respective **Z**<sub>med </sub> vectors. In the machine learning pipeline, 70% of these solution vectors are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% of vectors are dedicated to testing the trained model, as well as assessing the performance of the CGM and HFM measurement methods within the SBC framework. This division allows for a comprehensive evaluation of both the model's predictive capabilities and the effectiveness of measurement techniques in the specified context. 
 
-5. **HFM.acp:**
+4. **HFM.acp:**
    - ATP file for computer simulation of the high-frequency method in case study's grounding system.
 
-6. **CGM.acp:**
+5. **CGM.acp:**
     - ATP file for computer simulation of the clamp-on ground meter method in case study's grounding system.
 
-7. **HFM_circuit.pdf:**
+6. **HFM_circuit.pdf:**
    - PDF file with the equivalent circuit's figure for the high-frequency measurement method in case study's grounding system.
 
-8. **CGM_circuit.pdf:**
+7. **CGM_circuit.pdf:**
    - PDF file with the equivalent circuit's figure for the clamp-on ground meter measurement method in case study's grounding system.
 
-9. **MAPE_results.xlsx:**
+8. **MAPE_results.xlsx:**
    - Excel spreadsheet containing the final results.
   
-10. **Supporting files:**
+9. **Supporting files:**
    - This directory contains sub-algorithms and Excel spreadsheet files with data frames used by the authors in developing the proposed solution. Each module (sub-algorithm) performs a specific task, and when combined, the modules form the complete algorithm named 'Proposed_solution.py.' Similarly, all the Excel files contain data frames that collectively contribute to the formatting of the 'Database.xlsx' file.
 
 ________________________________________________________________________________________________________________________
