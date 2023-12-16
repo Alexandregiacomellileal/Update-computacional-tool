@@ -56,4 +56,4 @@ Please send an email to: alexgiacomelli@yahoo.com
 ________________________________________________________________________________________________________________________
 
 ## Contributors:
-UTFPR and LACTEC
+Federal University of Technology – Parana (UTFPR) and Instituto de Tecnologia para o Desenvolvimento (LACTEC)
