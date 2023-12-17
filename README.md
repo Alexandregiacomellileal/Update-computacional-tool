@@ -18,6 +18,7 @@ ________________________________________________________________________________
     - Flowchart of the proposed methodology.
 
 2. **Proposed_solution.py:**
+   
     - Module 1 is designed to streamline the generation and control of extensive simulations of electrical circuits through a Python algorithm integrated with the Alternative Transient Program (ATP). The algorithm facilitates the creation of .atp simulation files, executes simulations, and transforms resulting waveforms (.pl4 files) into MATLAB (.mat) files. The algorithm systematically generates parameter vectors P, which are subsequently introduced into the clamp-on ground meter measurement equivalent electric circuit. It orchestrates the automation of data entry and extraction steps within the ATP software. All resulting input-output vector pairs [**P**; **Z**<sub>med </sub>] are cataloged in a dedicated database. Notably, the vectors **Z**<sub>med </sub> and **R**<sub>f</sub> (part of elements of P) assume a pivotal role as a foundational repository for Module 2, where machine learning models are developed based on this comprehensive dataset.
 
     - Module 2: A Python algorithm that incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings. It utilizes the database created in Module 1 for data preprocessing, model training, and evaluation metrics to optimize predictive accuracy. In the machine learning pipeline, 70% of the vectors pairs [**Z**<sub>med </sub>; **R**<sub>f</sub>] from the database are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% is dedicated to testing the trained model and assessing the performance of the CGM through the construction of boxplot error graphs. This graphs depicts the outcomes derived from the implementation of the Clamp-on Ground Meter Method (CGM) and the Proposed Method in the São Bento Complex (SBC) grounding system for a comparative analysis of their effects.
@@ -27,25 +28,25 @@ ________________________________________________________________________________
 
     - To utilize this algorithm, users are required to download and install three essential software components: ATP, the pl42mat.exe converter, and Python. 
    
-3. **Database.xlsx:**
+4. **Database.xlsx:**
     - Excel spreadsheet featuring an extensive dataset designed for training, validation, and testing machine learning models. The dataset consists of 11,000 solution vectors, formed by concatenating the **P** vectors with their respective **Z**<sub>med HF </sub> vectors. In the machine learning pipeline, 70% of these solution vectors are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% of vectors are dedicated to testing the trained model, as well as assessing the performance of the CGM and HFM measurement methods within the SBC framework. This division allows for a comprehensive evaluation of both the model's predictive capabilities and the effectiveness of measurement techniques in the specified context. 
 
-4. **HFM.acp:**
+5. **HFM.acp:**
    - ATP file for computer simulation of the high-frequency method in case study's grounding system.
 
-5. **CGM.acp:**
+6. **CGM.acp:**
     - ATP file for computer simulation of the clamp-on ground meter method in case study's grounding system.
 
-6. **HFM_circuit.pdf:**
+7. **HFM_circuit.pdf:**
    - PDF file with the equivalent circuit's figure for the high-frequency measurement method in case study's grounding system.
 
-7. **CGM_circuit.pdf:**
+8. **CGM_circuit.pdf:**
    - PDF file with the equivalent circuit's figure for the clamp-on ground meter measurement method in case study's grounding system.
 
-8. **MAPE_results.xlsx:**
+9. **MAPE_results.xlsx:**
    - Excel spreadsheet containing the final results.
   
-9. **Supporting files:**
+10. **Supporting files:**
    - This directory contains sub-algorithms and Excel spreadsheet files with data frames used by the authors in developing the proposed solution. Each module (sub-algorithm) performs a specific task, and when combined, the modules form the complete algorithm named 'Proposed_solution.py.' Similarly, all the Excel files contain data frames that collectively contribute to the formatting of the 'Database.xlsx' file.
 
 ________________________________________________________________________________________________________________________
