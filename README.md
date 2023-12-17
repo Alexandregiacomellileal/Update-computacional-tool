@@ -28,28 +28,28 @@ ________________________________________________________________________________
 
     - To utilize this algorithm, users are required to download and install three essential software components: ATP, the pl42mat.exe converter, and Python. 
    
-4. **Database.xlsx:**
+3. **Database.xlsx:**
     - Excel spreadsheet featuring an extensive dataset designed for training, validation, and testing machine learning models. The dataset consists of 11,000 solution vectors, formed by concatenating the **P** vectors with their respective **Z**<sub>med</sub> vectors. In the machine learning pipeline, 70% of these solution vectors are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% of vectors are dedicated to testing the trained model, as well as assessing the performance of the CGM and HFM measurement methods within the SBC framework. This division allows for a comprehensive evaluation of both the model's predictive capabilities and the effectiveness of measurement techniques in the specified context. 
 
-5. **HFM.acp:**
+4. **HFM.acp:**
    - ATP file for computer simulation of the high-frequency method in case study's grounding system.
 
-6. **CGM.acp:**
+5. **CGM.acp:**
     - ATP file for computer simulation of the clamp-on ground meter method in case study's grounding system.
 
-7. **HFM_circuit.pdf:**
+6. **HFM_circuit.pdf:**
    - PDF file with the equivalent circuit's figure for the high-frequency measurement method in case study's grounding system.
 
-8. **CGM_circuit.pdf:**
+7. **CGM_circuit.pdf:**
    - PDF file with the equivalent circuit's figure for the clamp-on ground meter measurement method in case study's grounding system.
 
-9. **MAPE_results.xlsx:**
+8. **MAPE_results.xlsx:**
    - Excel spreadsheet containing the final results.
 
-10. **Error_Boxplot.pdf:**
+9. **Error_Boxplot.pdf:**
     - Error boxplot graphs illustrating the performance variations among the clamp-on ground meter, high-frequency, and a proposed method when applied in the context of estimating the SBC's grounding resistance turbines. These boxplots provide a visual representation of the errors associated with each method, facilitating a comprehensive comparison and analysis between them.
 
-11. **Supporting files:**
+10. **Supporting files:**
    - This directory contains sub-algorithms and Excel spreadsheet files with data frames used by the authors in developing the proposed solution. Each module (sub-algorithm) performs a specific task, and when combined, the modules form the complete algorithm named 'Proposed_solution.py.' Similarly, all the Excel files contain data frames that collectively contribute to the formatting of the 'Database.xlsx' file.
 
 ________________________________________________________________________________________________________________________
