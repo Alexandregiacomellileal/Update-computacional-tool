@@ -1,7 +1,7 @@
 <img width="1666" alt="image" src="https://github.com/Alexandregiacomellileal/Update-computacional-tool/assets/96079504/d40874aa-487c-4722-abfe-1cff32cfbd77">
 
 
-# Integrated approach for wind turbine grounding resistance estimation: Bridging clamp-on ground meter, computational simulations, and machine learning.
+### Integrated approach for wind turbine grounding resistance estimation: Bridging clamp-on ground meter, computational simulations, and machine learning.
 
 ## Overview
 This repository contains a systematic solution for analyzing the grounding system of a wind turbines. The proposed solution involves a sequence of tasks depicted in methodology_flowchart.pdf. The approach integrates technical documentation analysis, parameter survey, electrical circuit modeling, sensitivity studies, and machine learning to predict turbine grounding resistances.
@@ -68,68 +68,4 @@ Federal University of Technology – Parana (UTFPR) and Institute of Technology 
 
 
 
-
-
-
-
-
-# Integrated Approach for Wind Turbine Grounding Resistance Estimation
-## Bridging Clamp-on Ground Meter, Computational Simulations, and Machine Learning
-
-### Overview
-This repository presents a systematic solution for analyzing wind turbine grounding systems. The proposed approach integrates technical documentation analysis, parameter survey, electrical circuit modeling, sensitivity studies, and machine learning to predict turbine grounding resistances. Check out the methodology_flowchart.pdf for an overview of the process.
-
-### Methodology
-The proposed solution involves a series of structured tasks:
-
-1. **Technical Documentation and Parameter Survey:**
-   - Begin by accessing the wind farm's grounding system documentation.
-   - Conduct a parameter survey to calculate components of the equivalent electrical circuit.
-
-2. **Electrical Circuit Modeling and Sensitivity Studies:**
-   - Choose an appropriate electrical circuit model.
-   - Perform sensitivity studies on parameters affecting grounding resistance and capacitance.
-   - Define tolerance ranges to account for variations and uncertainties.
-
-3. **Sample Vector Generation and Computational Simulations:**
-   - Generate a sample vector (P) representing grounding resistances, capacitances, and mutual coupling effects.
-   - Load the equivalent circuit based on the sample vector (P).
-   - Perform computational simulations of the clamp-on method to obtain output sample vectors (Zmed).
-
-4. **Database Construction and Machine Learning:**
-   - Store input-output pairs [Zmed; Rf] in a dedicated database (Dm x 2n).
-   - Utilize the database to train a machine-learning model.
-   - Validate and test the model for accuracy and reliability.
-
-5. **Prediction of Turbine Grounding Resistances:**
-   - Use the trained model to predict Rf values for turbines based on clamp-on method readings (Zmed).
-   - Ensure a logical progression from data collection and circuit modeling to machine learning application.
-
-### Files
-1. **methodology_flowchart:**
-   - Flowchart of the proposed methodology.
-
-2. **Proposed_solution.py:**
-   - Module 1: Generates and controls extensive simulations, automates data entry and extraction.
-   - Module 2: Utilizes advanced machine learning to forecast turbine grounding resistance.
-   - Module 3: Efficiently simulates electrical circuits using ATP, with outcomes represented through a box plot error graph.
-   - Requires installation of ATP, pl42mat.exe converter, and Python.
-
-3. **Database.xlsx:**
-   - Excel spreadsheet with a dataset for training, validation, and testing machine learning models.
-
-4. **HFM.acp and CGM.acp:**
-   - ATP files for computer simulation of the high-frequency and clamp-on ground meter methods.
-
-5. **HFM_circuit.pdf and CGM_circuit.pdf:**
-   - PDF files with equivalent circuit figures for the high-frequency and clamp-on ground meter methods.
-
-6. **MAPE_results.xlsx:**
-   - Excel spreadsheet containing final results.
-
-7. **Supporting files:**
-   - Sub-algorithms and Excel files with data frames used in developing the proposed solution.
-
-### Usage
-To apply this systematic approach to your wind farm grounding system analysis, follow the instructions outlined in the respective sections of the codebase. Detailed instructions for each file can be found within their specific directories.
 
