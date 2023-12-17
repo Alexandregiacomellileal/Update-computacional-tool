@@ -19,11 +19,11 @@ ________________________________________________________________________________
 
 2. **Proposed_solution.py:**
    
-    - Module 1 is designed to streamline the generation and control of extensive simulations of electrical circuits through a Python algorithm integrated with the Alternative Transient Program (ATP). The algorithm facilitates the creation of .atp simulation files, executes simulations, and transforms resulting waveforms (.pl4 files) into MATLAB (.mat) files. The algorithm systematically generates parameter vectors P, which are subsequently introduced into the clamp-on ground meter measurement equivalent electric circuit. It orchestrates the automation of data entry and extraction steps within the ATP software. All resulting input-output vector pairs [**P**; **Z**<sub>med </sub>] are cataloged in a dedicated database. Notably, the vectors **Z**<sub>med </sub> and **R**<sub>f</sub> (part of elements of P) assume a pivotal role as a foundational repository for Module 2, where machine learning models are developed based on this comprehensive dataset.
+    - Module 1 is designed to streamline the generation and control of extensive simulations of electrical circuits through a Python algorithm integrated with the Alternative Transient Program (ATP). The algorithm facilitates the creation of .atp simulation files, executes simulations, and transforms resulting waveforms (.pl4 files) into MATLAB (.mat) files. The algorithm systematically generates parameter vectors P, which are subsequently introduced into the clamp-on ground meter measurement equivalent electric circuit. It orchestrates the automation of data entry and extraction steps within the ATP software. All resulting input-output vector pairs [**P**; **Z**<sub>med </sub>] are cataloged in a dedicated database. Notably, the vectors **Z**<sub>med </sub> and **R**<sub>f</sub> (part of elements of **P**) assume a pivotal role as a foundational repository for Module 2, where machine learning models are developed based on this comprehensive dataset.
 
-    - Module 2: A Python algorithm that incorporates machine learning techniques to predict turbine grounding resistance based on clamp-on meter readings. It utilizes the database created in Module 1 for data preprocessing, model training, and evaluation metrics to optimize predictive accuracy. In the machine learning pipeline, 70% of the vectors pairs [**Z**<sub>med </sub>; **R**<sub>f</sub>] from the database are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% is dedicated to testing the trained model and assessing the performance of the CGM through the construction of boxplot error graphs. This graphs depicts the outcomes derived from the implementation of the Clamp-on Ground Meter Method (CGM) and the Proposed Method in the São Bento Complex (SBC) grounding system for a comparative analysis of their effects.
+    - Module 2 introduces a Python algorithm leveraging advanced machine learning techniques to forecast turbine grounding resistance based on clamp-on meter readings. This algorithm capitalizes on the database established in Module 1, employing it for tasks such as data preprocessing, model training, and the assessment of evaluation metrics to enhance predictive accuracy. Within the machine learning pipeline, 70% of the vector pairs [**Z**<sub>med </sub>; **R**<sub>f</sub>] from the Module 1 database are allocated for training the model, ensuring a robust foundation for learning. The remaining 30% is reserved for testing the trained model, evaluating its performance, and constructing boxplot error graphs. These graphs depict the outcomes of implementing the Clamp-on Ground Meter Method (CGM) and the Proposed Method in the São Bento Complex (SBC) grounding system, providing a comparative analysis of their effects.
 
-    - Module 3: A Python algorithm that automatically generates and controls massive simulations of electrical circuits using ATP. The module creates .atp simulation files, performs simulations, and converts resulting waveforms (.pl4 files) into MATLAB files (.mat). This algorithm is designed to load the **P** electrical paramaters sample vectors from the testing set separated in Module 2, sequentially introduce them into the High-frequency ground meter measurement circuit, and automate the steps of data insertion and extraction within the ATP software.  All input-output pairs resultants are stored in a dedicated database, serving as the basis to construct a box plot error graph depicting the outcomes derived from the implementation of the High-Frequency Method (HFM) in the São Bento Complex (SBC) grounding system.
+    - Module 3 features a Python algorithm designed to efficiently generate and manage extensive simulations of electrical circuits using ATP. This module is capable of creating .atp simulation files, executing simulations, and converting resulting waveforms (.pl4 files) into MATLAB files (.mat). Specifically tailored for the testing set separated in Module 2, the algorithm loads the **P** electrical parameter sample vectors, sequentially introducing them into the High-frequency ground meter measurement circuit. It then automates the essential steps of data insertion and extraction within the ATP software. All resulting input-output pairs are stored in a dedicated database, forming the foundation for comprehensive analysis. The algorithm's outcomes are visually represented through a box plot error graph. This graph encapsulates the results obtained from implementing the High-Frequency Method (HFM) in the São Bento Complex (SBC) grounding system, providing a clear comparative assessment of its impact.
 
 
     - To utilize this algorithm, users are required to download and install three essential software components: ATP, the pl42mat.exe converter, and Python. 
@@ -64,3 +64,72 @@ ________________________________________________________________________________
 
 ## Contributors:
 Federal University of Technology – Parana (UTFPR) and Institute of Technology for Development (LACTEC)
+
+
+
+
+
+
+
+
+
+# Integrated Approach for Wind Turbine Grounding Resistance Estimation
+## Bridging Clamp-on Ground Meter, Computational Simulations, and Machine Learning
+
+### Overview
+This repository presents a systematic solution for analyzing wind turbine grounding systems. The proposed approach integrates technical documentation analysis, parameter survey, electrical circuit modeling, sensitivity studies, and machine learning to predict turbine grounding resistances. Check out the methodology_flowchart.pdf for an overview of the process.
+
+### Methodology
+The proposed solution involves a series of structured tasks:
+
+1. **Technical Documentation and Parameter Survey:**
+   - Begin by accessing the wind farm's grounding system documentation.
+   - Conduct a parameter survey to calculate components of the equivalent electrical circuit.
+
+2. **Electrical Circuit Modeling and Sensitivity Studies:**
+   - Choose an appropriate electrical circuit model.
+   - Perform sensitivity studies on parameters affecting grounding resistance and capacitance.
+   - Define tolerance ranges to account for variations and uncertainties.
+
+3. **Sample Vector Generation and Computational Simulations:**
+   - Generate a sample vector (P) representing grounding resistances, capacitances, and mutual coupling effects.
+   - Load the equivalent circuit based on the sample vector (P).
+   - Perform computational simulations of the clamp-on method to obtain output sample vectors (Zmed).
+
+4. **Database Construction and Machine Learning:**
+   - Store input-output pairs [Zmed; Rf] in a dedicated database (Dm x 2n).
+   - Utilize the database to train a machine-learning model.
+   - Validate and test the model for accuracy and reliability.
+
+5. **Prediction of Turbine Grounding Resistances:**
+   - Use the trained model to predict Rf values for turbines based on clamp-on method readings (Zmed).
+   - Ensure a logical progression from data collection and circuit modeling to machine learning application.
+
+### Files
+1. **methodology_flowchart:**
+   - Flowchart of the proposed methodology.
+
+2. **Proposed_solution.py:**
+   - Module 1: Generates and controls extensive simulations, automates data entry and extraction.
+   - Module 2: Utilizes advanced machine learning to forecast turbine grounding resistance.
+   - Module 3: Efficiently simulates electrical circuits using ATP, with outcomes represented through a box plot error graph.
+   - Requires installation of ATP, pl42mat.exe converter, and Python.
+
+3. **Database.xlsx:**
+   - Excel spreadsheet with a dataset for training, validation, and testing machine learning models.
+
+4. **HFM.acp and CGM.acp:**
+   - ATP files for computer simulation of the high-frequency and clamp-on ground meter methods.
+
+5. **HFM_circuit.pdf and CGM_circuit.pdf:**
+   - PDF files with equivalent circuit figures for the high-frequency and clamp-on ground meter methods.
+
+6. **MAPE_results.xlsx:**
+   - Excel spreadsheet containing final results.
+
+7. **Supporting files:**
+   - Sub-algorithms and Excel files with data frames used in developing the proposed solution.
+
+### Usage
+To apply this systematic approach to your wind farm grounding system analysis, follow the instructions outlined in the respective sections of the codebase. Detailed instructions for each file can be found within their specific directories.
+
