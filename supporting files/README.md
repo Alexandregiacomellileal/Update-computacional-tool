@@ -27,6 +27,21 @@ This directory contains sub-algorithms and Excel spreadsheet files with data fra
    - Excel spreadsheet with 3300 samples of input and output vectors from the high-frequency method simulation in case study's grounding system. This file is intended for use by the algorithm 'sbn_error_boxplot_high_frequency_cap.py.py'.
 
 
+________________________________________________________________________________________________________________________
+
+## Usage
+
+To apply this systematic approach to your wind farm grounding system analysis, follow the steps outlined in the respective sections of the codebase. Detailed instructions for each file can be found within their specific directories.
+
+________________________________________________________________________________________________________________________
+
+## Contact us:
+Please send an email to: alexgiacomelli@yahoo.com
+
+________________________________________________________________________________________________________________________
+
+## Contributors:
+Federal University of Technology – Parana (UTFPR) and Institute of Technology for Development (LACTEC)
 
 
 
