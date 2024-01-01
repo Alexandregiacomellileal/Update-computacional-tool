@@ -21,7 +21,7 @@ ________________________________________________________________________________
 
 2. [[Proposed_solution.py](https://github.com/Alexandregiacomellileal/Update-computacional-tool/blob/main/Proposed_solution.py)]
   
-    - Este algoritmo Python compreende três módulos projetados para gerar, analisar e prever a resistência de aterramento em circuitos elétricos usando o Programa Alternativo de Transientes (ATP) e técnicas de aprendizado de máquina.
+    - This Python algorithm comprises three modules designed for generating, analyzing, and forecasting grounding resistance in electrical circuits using the Alternative Transient Program (ATP) and machine learning techniques.
       
     - Module 1 is designed to streamline the generation and control of extensive simulations of electrical circuits through a Python algorithm integrated with the Alternative Transient Program (ATP). The algorithm facilitates the creation of *.atp* simulation files, executes simulations, and transforms resulting waveforms *.pl4* files into MATLAB *.mat* files. The algorithm systematically generates parameter vectors P, which are subsequently introduced into the clamp-on ground meter measurement equivalent electric circuit. It orchestrates the automation of data entry and extraction steps within the ATP software. All input-output vector pairs [**P** ; **Z**<sub>med </sub>] are cataloged in a dedicated database. Notably, the vectors **Z**<sub>med </sub> and **R**<sub>f</sub> ($n$ elements of **P**) assume a pivotal role as a foundational repository for Module 2, where machine learning models are developed based on this comprehensive dataset.
 
