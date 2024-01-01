@@ -52,7 +52,7 @@ ________________________________________________________________________________
     - Error boxplot graphs illustrating the performance variations among the clamp-on ground meter, high-frequency, and a proposed method when applied in the context of estimating the SBC's grounding resistance turbines. These boxplots provide a visual representation of the errors associated with each method, facilitating a comprehensive comparison and analysis between them.
 
 10. [[Supporting files](https://github.com/Alexandregiacomellileal/Update-computacional-tool/tree/main/supporting%20files)]
-   - This directory contains sub-algorithms and Excel spreadsheet files with data frames used by the authors in developing the proposed solution. Each module (sub-algorithm) performs a specific task, and when combined, the modules form the complete algorithm named ***Proposed_solution.py.*** Similarly, all the Excel files contain data frames that collectively contribute to the formatting of the ***Database.xlsx*** file.
+   - This directory contains sub-algorithms and Excel spreadsheet files with data frames used by the authors in developing the proposed solution. Each module (sub-algorithm) performs a specific task, and when combined, the modules form the complete algorithm named [[Proposed_solution.py](https://github.com/Alexandregiacomellileal/Update-computacional-tool/blob/main/Proposed_solution.py)]. Similarly, all the Excel files contain data frames that collectively contribute to the formatting of the [[Database.xlsx](https://github.com/Alexandregiacomellileal/Update-computacional-tool/blob/main/Database.xlsx)] file.
 
 ________________________________________________________________________________________________________________________
 
